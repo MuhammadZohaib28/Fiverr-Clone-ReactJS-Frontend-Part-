@@ -1,0 +1,24 @@
+.features{
+    background-color: aliceblue;
+    width: 85rem;
+    margin: 1rem auto;
+    padding: 5rem;
+
+    .left{
+        border: 1px solid red;
+        width: 35rem;
+        h1{
+
+        }
+
+        .subheading{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid red;
+            width: 20rem;
+        }
+    }
+
+    .right{}
+}

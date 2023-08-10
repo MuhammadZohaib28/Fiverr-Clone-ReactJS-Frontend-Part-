@@ -1,0 +1,40 @@
+.catcard {
+  position: relative;
+  width: 252px;
+  height: 344px;
+  color: white;
+  border-radius: 0.7rem;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px;
+
+    .desc {
+      font-weight: 300;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+
+    .title {
+      font-weight: 500;
+      font-size: 24px;
+      position: absolute;
+      left: 15px;
+      top: 40px;
+    }
+  }
+}

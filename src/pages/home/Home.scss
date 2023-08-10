@@ -1,0 +1,214 @@
+.home {
+  .yniwgi {
+    width: 100%;
+    padding: 6rem;
+    margin: 1rem auto;
+
+    .container {
+      padding: 2.5rem;
+      display: flex;
+      // background-color: aqua;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      gap: 3rem;
+      //   border: 1px solid red;
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // gap: 1rem;
+        width: 11rem;
+        // border: 1px solid red;
+
+        span {
+          color: rgb(35, 35, 35);
+          font-weight: 500;
+        }
+        .icon {
+          position: relative;
+          display: inline-block;
+          margin: 0.4rem auto;
+          cursor: pointer; /* Add cursor style to indicate interactivity */
+
+          .underline {
+            position: absolute;
+            bottom: -2px; /* Adjust the position of the line */
+            left: 50%; /* Set the initial position to the middle */
+            width: 4rem; /* Set the initial width to 0 */
+            height: 1px; /* Adjust the thickness of the line */
+            background-color: #808080; /* Adjust the color of the line */
+            transition: width 0.2s, background-color 0.2s; /* Add transitions */
+            transform: translateX(-50%); /* Center the line */
+          }
+
+          img {
+            height: 3rem;
+          }
+
+          &:hover .underline {
+            width: 200%; /* Expand the line to both sides */
+            background-color: seagreen; /* Change the color */
+          }
+        }
+      }
+    }
+  }
+
+  .features {
+    background-color: aliceblue;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+
+    .left {
+      // border: 1px solid red;
+      width: 35rem;
+
+      p {
+        font-size: 1.2rem;
+        margin: 0.3rem 0rem 1.2rem 0rem;
+        color: rgb(62, 62, 62);
+      }
+      h1 {
+        margin-bottom: 1rem;
+      }
+
+      .subheading {
+        display: flex;
+        // justify-content: space-around;
+        gap: 1rem;
+        align-items: center;
+        // border: 1px solid red;
+        width: 22rem;
+
+        span {
+          font-weight: 600;
+          font-size: 1.2rem;
+          color: rgb(40, 33, 33);
+        }
+      }
+    }
+
+    .right {
+      // border: 1px solid red;
+      // height: 400px;
+
+      video {
+        width: 640px;
+        border-radius: 0.6rem;
+      }
+    }
+  }
+
+  .fiverrbusiness {
+    background-color: #0d084d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    width: 100%;
+    padding: 6rem;
+    // border: 1px solid red;
+
+    .left {
+
+        button{
+            padding: 0.7rem 1.4rem;
+            font-size: 1.1rem;
+            color: rgb(90, 90, 90);
+            border-radius: 0.4rem;
+            margin-top: 4rem;
+            font-weight: 500;
+            outline: none;
+            border: none;
+            
+
+        }
+    //   border: 1px solid red;
+      .container {
+        // border: 1px solid red;
+        display: flex;
+        align-items: baseline;
+
+        .logo {
+          display: flex;
+          justify-content: center;
+          align-items: baseline;
+
+          .text {
+            // color: rgb(255, 255, 255);
+            font-weight: bolder;
+            font-size: 2rem;
+          }
+          .dot {
+            font-weight: 900;
+            font-size: 2.5rem;
+            color: seagreen;
+          }
+        }
+
+        .bs {
+            color: white;
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin-left: 0.5rem;
+        }
+      }
+
+      .heading {
+        // border: 1px solid black;
+        margin-top: 1rem;
+        
+        width: 80%;
+        line-height: 2.7rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+
+      }
+
+      .lines {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        // border: 1px solid red;
+        width: 30rem;
+        gap: 1rem;
+        margin: 1rem 0 1rem 0;
+        .img {
+            // border: 1px solid red;
+            mix-blend-mode: screen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          img {
+            height: 2.4rem;
+          }
+        }
+
+        .linetext {
+           
+          span {
+            // border: 1px solid red;
+            font-weight: 600;
+            font-size: 1.2rem;
+
+          }
+          p {
+          }
+        }
+      }
+    }
+    .right {
+      img {
+        height: 25rem;
+      }
+    }
+  }
+}
