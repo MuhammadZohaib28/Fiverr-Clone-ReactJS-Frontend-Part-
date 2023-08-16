@@ -1,0 +1,131 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  border-top: 1.56px solid #d7d7d7;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1.5rem;
+    width: 85rem;
+    margin: 1rem auto;
+
+    .categories {
+      // border: 1px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // width: 100%;
+
+      ul {
+        line-height: 1rem;
+        li {
+          list-style: none;
+          margin: 1.5rem auto;
+          color: #74767e;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .heading {
+        margin-bottom: 2rem;
+        font-weight: 550;
+        color: black;
+      }
+    }
+  }
+  .bottom {
+    width: 85rem;
+    border-top: 1.6px solid #d7d7d7;
+    margin: 0.1rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+
+    .left {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+      color: #afafaf;
+      font-weight: 500;
+      
+
+      .fiverrspan{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        // gap: 0.1rem;
+        font-weight: 700;
+        font-size: 1.8rem;
+        letter-spacing: -0.1rem;
+        // border: 1px solid red;
+        position: relative;
+        width: 7rem;
+        color: #74767e;
+        
+
+        span{
+           font-size: 1.4rem;
+           position: absolute;
+           right: 0.7rem;
+           top: 0.9rem;
+           
+        }
+
+      }
+    }
+    .right {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 4rem;
+        // border: 1px solid red;
+
+        .rightleft{
+            // border: 1px solid red;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 1rem;
+
+            img{
+                height: 1.4rem;
+            }
+        }
+
+        .rightright{
+            //  border: 1px solid red;
+             display: flex;
+             justify-content: space-around;
+             align-items: center;
+             gap: 2rem;
+
+             .access{
+                border: 1px solid #74767e;
+                border-radius: 50rem;
+                padding: 0.4rem;
+             }
+
+             .english{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                gap: 0.4rem;
+                color: #797979;
+                letter-spacing: -0.02rem;
+                font-weight: 600;
+
+                .globe{
+                    height: 1.3rem;
+                }
+             }
+        }
+    }
+  }
+}

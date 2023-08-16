@@ -1,0 +1,164 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  transition: all ease 0.5s;
+  position: sticky;
+  top: 0;
+  background-color: rgb(4, 92, 42);
+  background: transparent;
+  z-index: 5;
+
+  .focused {
+    background-color: blue;
+    color: white;
+  }
+
+  &.active {
+    background-color: white;
+    color: black;
+  }
+
+  hr {
+    width: 100%;
+    height: 0;
+    border: 0.5px solid lightgray;
+  }
+
+  .menu {
+    width: 85rem;
+    padding: 0.8rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    color: rgb(70, 70, 70);
+  }
+
+  .container {
+    width: 85rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+    transition: background-color ease 0.5s;
+
+    .search-bar {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      transition: background-color 0.3s ease;
+    }
+
+    .focused {
+      background-color: blue;
+      color: white;
+    }
+
+    .searchbar {
+      width: 25rem;
+      height: 2.4rem;
+      padding: 0.8rem 1rem;
+      border: 1px solid lightgray;
+      border-radius: 0.3rem;
+      outline: none;
+      font-size: 1rem;
+      margin-right: 5rem;
+      transition: all ease 0.5s;
+
+      &:focus {
+        border: 1px solid black;
+      }
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+
+      .text {
+        // color: rgb(255, 255, 255);
+        font-weight: bolder;
+        font-size: 2rem;
+      }
+      .dot {
+        font-weight: 900;
+        font-size: 2.5rem;
+        color: seagreen;
+      }
+    }
+    .links {
+      display: flex;
+      // border: 1px solid red;
+      font-weight: 500;
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        cursor: pointer;
+        position: relative;
+
+        img {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 5rem;
+          object-fit: cover;
+        }
+
+        .options {
+          position: absolute;
+          top: 4rem;
+          right: 0;
+          padding: 1rem;
+          background-color: white;
+          border: 1px solid gray;
+          border-radius: 1rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          color: black;
+          width: 15rem;
+          // background-color: rgba(46, 139, 86, 0.285);
+
+          .LINK {
+            // border: 1px solid red;
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+            border: none;
+          }
+          .LINK:hover {
+            transition: 0.4s all ease;
+            background-color: seagreen;
+          }
+        }
+      }
+
+      button {
+        padding: 0.4rem 1rem;
+        font-size: 1.1rem;
+        background-color: seagreen;
+        font-weight: 700;
+        border: none;
+        border: 1px solid rgb(255, 255, 255);
+        outline: none;
+        border-radius: 0.4rem;
+
+        &:hover {
+          background-color: aliceblue;
+        }
+      }
+
+      .listitems {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        gap: 2rem;
+      }
+    }
+  }
+}
